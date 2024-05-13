@@ -13,30 +13,36 @@ const Banner: React.FC<{}> = () => {
             src="/Me.png"
             height={250}
             width={250}
-            alt="Ibrahim Memon"
+            alt="John Lee"
           />
         </div>
 
         <div className="flex flex-col gap-6 mt-10 cursor-pointer animate-bounce tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto">
-          Ibrahim Memon!
+          Hi!
+          <br></br><p>I am John</p>
         </div>
         <div className="flex justify-center">
           <p className="text-2xl font-medium tracking-tighter  text-gray-300 max-w-[600px]">
-            I do Code &{" "}
+            I enjoy exploring &{" "}
             <span className="text-transparent font-semibold  bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
-              Chill
+              working with data
             </span>
           </p>
           <Image src="/popcorn.gif" height={50} width={50} alt="chill" />
         </div>
 
         <p className="text-md text-gray-200 my-5 max-w-[600px]">
-          Passionate Software Engineer with a focus on React Native development,
-          dedicated to crafting elegant and user-friendly mobile applications.
+        Passionate Data Analyst & Scientist with a focus on extracting insights from tons of data, 
+        dedicated to supporting the development of elegant and user-friendly mobile applications through data-driven analysis and modeling.
         </p>
         <div className="text-md flex justify-center">
+        <button
+            onClick={() => window.open("https://drive.google.com/file/d/10DX9tjoWlCBG17MTIXKVJBPqycK5YIAa/view?usp=sharing")} 
+            className=" z-[1] padding-20 hover:bg-white rounded-3xl text-white font-semibold hover:text-black py-3 px-10 border-[0.1px] border-white hover:border-transparent mx-4">
+            Resume
+          </button>
           <button
-            onClick={() => window.open("mailto:ibrahimmemon930@gmail.com")}
+            onClick={() => window.open("mailto:asdl0320@gmail.com")}
             className=" z-[1]     padding-20  hover:bg-white rounded-3xl  text-white font-semibold hover:text-black py-3 px-10  border-[0.1px] border-white hover:border-transparent ">
             Contact Me
           </button>

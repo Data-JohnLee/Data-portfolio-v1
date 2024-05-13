@@ -7,28 +7,28 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ibiimemon.com/"),
-  title: "Ibrahim Memon | Next.js | React | ReactNative | Android",
+  metadataBase: new URL("https://data-john.netlify.app/"),
+  title: "John Lee | Data Analyst | Data Scientist",
   description:
-    "Frontend & Mobile App Developer from Pakistan with 3+ years of expertise. Senior Software Engineer. Specializing mobile apps, UX, and JavaScript technologies.",
+    "Experienced data analyst with over 8 years of expertise in data analysis, statistical techniques, and business intelligence, and Machine Learning. Proven track record in data-driven decision making and operational efficiency improvements.",
   keywords: [
-    "Developer",
-    "Portfolio",
-    "Developer Portflio",
-    "Ibrahim Memon",
-    "Next.js",
-    "React",
-    "ReactNative",
-    "Android",
+    "John Lee",
+    "Data Analyst",
+    "Business Intelligence",
+    "Data Visualization",
+    "Machine Learning",
+    "Python",
+    "SQL",
+    "R",
   ],
   openGraph: {
-    title: "Ibrahim Memon | Next.js | React | ReactNative | Android",
+    title: "John Lee | Data Analyst | Data Scientist",
     description:
-      "Frontend & Mobile App Developer from Pakistan with 3+ years of expertise. Senior Software Engineer. Specializing mobile apps, UX, and JavaScript technologies.",
+      "Experienced data analyst with over 8 years of expertise in data analysis, statistical techniques, and business intelligence, and Machine Learning. Proven track record in data-driven decision making and operational efficiency improvements.",
     images: "/OpenGraph.jpg",
   },
   alternates: {
-    canonical: "https://ibiimemon.com/",
+    canonical: "https://data-john.netlify.app/",
   },
 };
 
