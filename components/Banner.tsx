@@ -18,11 +18,11 @@ const Banner: React.FC<{}> = () => {
         </div>
 
         <div className="flex flex-col gap-6 mt-10 cursor-pointer animate-bounce tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto">
-        <span className="text-5xl font-semibold">Hello!</span>
-          <span className="text-5xl font-semibold">I am John</span>
+        <span className="text-7xl font-semibold">Hello!</span>
+          <span className="text-7xl font-semibold">I am John</span>
         </div>
         <div className="flex justify-center">
-        <p className="text-2xl font-medium tracking-tighter  text-gray-300 max-w-[600px]">
+        <p className="text-3xl font-medium tracking-tighter  text-gray-300 max-w-[600px]">
             I enjoy exploring &{" "}
             <span className="text-transparent font-semibold  bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
               working with data
@@ -30,11 +30,15 @@ const Banner: React.FC<{}> = () => {
           </p>
           <Image src="/popcorn.gif" height={50} width={50} alt="chill" />
         </div>
+        <br>
+        </br>
 
-        <p className="text-md text-gray-200 my-5 max-w-[600px]">
-        Passionate Data Analyst & Scientist with a focus on extracting insights from tons of data, 
-        dedicated to supporting the development of elegant and user-friendly mobile applications through data-driven analysis and modeling.
+        <p className="text-md text-gray-400 my-3 text-1xl max-w-[600px]">
+        Accomplished Data Analyst and Scientist with a proven track record of extracting actionable insights from extensive datasets. 
+        Dedicated to enhancing data-driven decision-making and optimizing operational efficiency across various organizational contexts.     
         </p>
+        <br>
+        </br>
         <div className="text-md flex justify-center">
         <button
             onClick={() => window.open("https://drive.google.com/file/d/10DX9tjoWlCBG17MTIXKVJBPqycK5YIAa/view?usp=sharing")} 
