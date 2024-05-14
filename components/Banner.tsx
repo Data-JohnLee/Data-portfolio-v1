@@ -23,7 +23,7 @@ const Banner: React.FC<{}> = () => {
         </div>
         <div className="flex justify-center">
           <p className="text-2xl font-medium tracking-tighter  text-gray-300 max-w-[600px]">
-            I enjoy exploring &
+            I enjoy exploring &{" "}
             <span className="text-transparent font-semibold  bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
               working with data
             </span>

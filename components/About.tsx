@@ -12,7 +12,7 @@ const About: React.FC<{}> = () => {
         <p className=" tracking-[0.5em] text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl">
           Get To Know More
         </p>
-        <p className="text-gray-300 text-center ">
+        <p className="text-gray-500 text-center ">
         <br />
         A dedicated 'Data Analyst' deeply engaged in the fields of data science and machine learning. 
         With a strong foundation in business administration and data science, 
