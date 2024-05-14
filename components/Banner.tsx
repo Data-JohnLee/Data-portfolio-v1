@@ -24,11 +24,11 @@ const Banner: React.FC<{}> = () => {
         <div className="flex justify-center">
           <p className="text-2xl font-medium tracking-tighter  text-gray-300 max-w-[600px]">
             I enjoy exploring &{" "}
-            <span className="text-transparent font-semibold  bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
+              <span className="text-transparent font-semibold  bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
               working with data
-            </span>
+              </span>
           </p>
-          <Image src="/popcorn.gif" height={50} width={50} alt="chill" />
+          <Image src="/public/popcorn.gif" height={50} width={50} alt="chill" />
         </div>
 
         <p className="text-md text-gray-200 my-5 max-w-[600px]">
@@ -53,3 +53,4 @@ const Banner: React.FC<{}> = () => {
 };
 
 export default Banner;
+
