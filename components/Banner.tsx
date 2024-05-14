@@ -18,12 +18,12 @@ const Banner: React.FC<{}> = () => {
         </div>
 
         <div className="flex flex-col gap-6 mt-10 cursor-pointer animate-bounce tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto">
-          Hi!
-          <br></br><p>I am John</p>
+        <span className="text-5xl font-semibold">Hello!</span>
+          <span className="text-5xl font-semibold">I am John</span>
         </div>
         <div className="flex justify-center">
           <p className="text-2xl font-medium tracking-tighter  text-gray-300 max-w-[600px]">
-            I enjoy exploring &{" "}
+            I enjoy exploring &
             <span className="text-transparent font-semibold  bg-clip-text bg-gradient-to-r from-purple-500 to-orange-400">
               working with data
             </span>
