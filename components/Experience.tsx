@@ -4,7 +4,7 @@ import React from "react";
 const Experience: React.FC<{}> = () => {
   return (
     <section id="experience" className=" text-white">
-      <h2 className="font-semibold text-center text-5xl pt-5">
+      <h2 className="font-semibold text-center text-6xl pt-5">
         EXPERIENCE
       </h2>
       <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // 기술 스택 데이터
 const techStacks = [
@@ -36,11 +37,15 @@ const techStacks = [
 // 기술 스택 아이템 컴포넌트
 const TechItem = ({ name, image }) => (
   <div className="space-x-3 mb-3 text-center border p-1 rounded text-gray-400 shadow-md">
-    <img src={image} alt={name} className="h-10 mx-auto" /> {/* 이미지 크기 조정 */}
+    <img src={image} alt={name} className="h-10 mx-auto" />
     <span className="font">{name}</span>
   </div>
 );
 
+TechItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
 
 // 기술 스택 카테고리 컴포넌트
 const TechCategory = ({ category, items }) => (
@@ -54,6 +59,15 @@ const TechCategory = ({ category, items }) => (
   </div>
 );
 
+TechCategory.propTypes = {
+  category: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 const Skills = () => {
   return (
@@ -61,7 +75,7 @@ const Skills = () => {
       <h2 className="text-white font-semibold text-center text-6xl pt-[35px]">
         SKILLS
       </h2>
-      <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
+      <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500 text-1xl ">
         Get To Know More
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center">

@@ -28,7 +28,7 @@ const Banner: React.FC<{}> = () => {
               working with data
             </span>
           </p>
-          <Image src="/popcorn.gif" height={50} width={50} alt="chill" />
+          <Image src="/popcorn.gif" height={50} width={50} alt="Popcorn" unoptimized />
         </div>
         <br>
         </br>
