@@ -73,7 +73,7 @@ const Experience: React.FC<{}> = () => {
             <p className="text-gray-200">
               <span className="font-semibold">Renault Group</span>
               <br></br> 
-              Statistical Data Analyst
+              Statistical Data Analyst <br></br>/ Project Leader
             </p>
           </div>
           <p className="text-gray-200">
@@ -102,7 +102,7 @@ const Experience: React.FC<{}> = () => {
           <br></br>
           <br></br>
           <p className="text-gray-200">
-          * SKILLS: Python, SQL, R, Microsoft Office, Weibull, Pareto, Power BI
+          * SKILLS: Python, SQL, R, MS Office, Weibull, Pareto, Power BI
           </p>
         </p>
       </div>

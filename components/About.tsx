@@ -5,42 +5,42 @@ const techStacks = [
   {
     category: 'Machine Learning',
     items: [
-      { name: 'Pandas', icon: '🐻' },
-      { name: 'TensorFlow', icon: '🔥' },
-      { name: 'Numpy', icon: '📐' },
-      { name: 'Scikit-learn', icon: '📈' },
-      { name: 'Anaconda', icon: '🐍' },
+      { name: 'Pandas', image: '/pan.svg' },
+      { name: 'Numpy', image: '/num.svg' },
+      { name: 'Scikit-learn', image: '/sci.svg' },
+      { name: 'Anaconda', image: '/ana.svg' },
     ],
   },
   {
     category: 'Programming',
     items: [
-      { name: 'Python', icon: '🐍' },
-      { name: 'R', icon: '📊' },
-      { name: 'MySQL', icon: '🗄' },
-      { name: 'Postgresql', icon: '🐘' },
-      { name: 'Jupyter', icon: '📓' },
+      { name: 'Python', image: '/py.svg' },
+      { name: 'R Studio', image: '/r.svg' },
+      { name: 'MySQL', image: '/my.svg' },
+      { name: 'Postgresql', image: '/pos.png' },
+      { name: 'Jupyter', image: '/ju.svg' },
     ],
   },
   {
     category: 'Others',
     items: [
-      { name: 'Python', icon: '🐍' },
-      { name: 'R', icon: '📊' },
-      { name: 'MySQL', icon: '🗄' },
-      { name: 'Postgresql', icon: '🐘' },
-
+      { name: 'GitHub', image: '/gi.png' },
+      { name: 'Slack', image: '/sl.svg' },
+      { name: 'VS Code', image: '/vs.svg.png' },
+      { name: 'Obsidian', image: '/ob.png' },
+      { name: 'MS Office', image: '/ex.svg' },
     ],
   },
 ];
 
 // 기술 스택 아이템 컴포넌트
-const TechItem = ({ name, icon }) => (
-  <div className="space-x-3 mb-3 text-center border p-1 rounded  text-gray-400 shadow-md">
-    <span className="text-lg">{icon}</span>
+const TechItem = ({ name, image }) => (
+  <div className="space-x-3 mb-3 text-center border p-1 rounded text-gray-400 shadow-md">
+    <img src={image} alt={name} className="h-10 mx-auto" /> {/* 이미지 크기 조정 */}
     <span className="font">{name}</span>
   </div>
 );
+
 
 // 기술 스택 카테고리 컴포넌트
 const TechCategory = ({ category, items }) => (
@@ -48,11 +48,12 @@ const TechCategory = ({ category, items }) => (
     <h2 className="text-xl text-white mb-3 text-center">{category}</h2>
     <div className="flex flex-wrap justify-center items-center gap-3">
       {items.map((item, index) => (
-        <TechItem key={index} name={item.name} icon={item.icon} />
+        <TechItem key={index} name={item.name} image={item.image} />
       ))}
     </div>
   </div>
 );
+
 
 const Skills = () => {
   return (
