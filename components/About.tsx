@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 // 기술 스택 데이터
 const techStacks = [
@@ -47,12 +46,6 @@ const TechItem: React.FC<TechItemProps> = ({ name, image }) => (
   </div>
 );
 
-
-TechItem.propTypes = {
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-};
-
 // 기술 스택 카테고리 컴포넌트
 type TechCategoryProps = {
   category: string;
@@ -69,18 +62,6 @@ const TechCategory: React.FC<TechCategoryProps> = ({ category, items }) => (
     </div>
   </div>
 );
-
-
-TechCategory.propTypes = {
-  category: PropTypes.string.isRequired,
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};
-
 
 const Skills = () => {
   return (
