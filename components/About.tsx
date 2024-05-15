@@ -35,12 +35,18 @@ const techStacks = [
 ];
 
 // 기술 스택 아이템 컴포넌트
-const TechItem = ({ name, image }) => (
+type TechItemProps = {
+  name: string;
+  image: string;
+};
+
+const TechItem: React.FC<TechItemProps> = ({ name, image }) => (
   <div className="space-x-3 mb-3 text-center border p-1 rounded text-gray-400 shadow-md">
     <img src={image} alt={name} className="h-10 mx-auto" />
     <span className="font">{name}</span>
   </div>
 );
+
 
 TechItem.propTypes = {
   name: PropTypes.string.isRequired,
@@ -48,7 +54,12 @@ TechItem.propTypes = {
 };
 
 // 기술 스택 카테고리 컴포넌트
-const TechCategory = ({ category, items }) => (
+type TechCategoryProps = {
+  category: string;
+  items: Array<{ name: string; image: string }>;
+};
+
+const TechCategory: React.FC<TechCategoryProps> = ({ category, items }) => (
   <div className="text-md text-gray-400 my-4 text-center text-xl border-2 border-gray-300 bg-gray-950 p-3 rounded-lg shadow-lg">
     <h2 className="text-xl text-white mb-3 text-center">{category}</h2>
     <div className="flex flex-wrap justify-center items-center gap-3">
@@ -59,6 +70,7 @@ const TechCategory = ({ category, items }) => (
   </div>
 );
 
+
 TechCategory.propTypes = {
   category: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(
@@ -68,6 +80,7 @@ TechCategory.propTypes = {
     })
   ).isRequired,
 };
+
 
 const Skills = () => {
   return (
