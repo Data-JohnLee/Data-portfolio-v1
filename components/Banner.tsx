@@ -40,7 +40,7 @@ const Banner: React.FC<{}> = () => {
         <br>
         </br>
         <div className="text-md flex justify-center">
-        <button
+          <button
             onClick={() => window.open("https://drive.google.com/file/d/10DX9tjoWlCBG17MTIXKVJBPqycK5YIAa/view?usp=sharing")} 
             className=" z-[1] padding-20 hover:bg-white rounded-3xl text-white font-semibold hover:text-black py-3 px-10 border-[0.1px] border-white hover:border-transparent mx-4">
             Resume
