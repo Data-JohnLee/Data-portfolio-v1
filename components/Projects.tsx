@@ -11,91 +11,69 @@ const Projects: React.FC<{}> = () => {
       <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
         EXPLORE NOW
       </p>
-      <div className=" container mx-auto 2xl  ">
-        <div className="flex-col flex md:flex-row  mt-7">
+      <div className="container mx-auto">
+        <div className="flex flex-col mt-7">
           <Link
-            href="https://web.hr/"
+            href="https://github.com/Data-JohnLee/Risk-Predict"
             rel="noopener noreferrer"
             target="_blank"
-            className="z-[1]">
-            <div className="flex-row flex mb-5">
+            className="z-[1] mb-5">
+            <div className="flex-row flex">
               <Image
                 src="/FirstProject.png"
                 height={150}
                 width={150}
-                alt="WebHR Project"
+                alt="Risk Predict"
               />
               <div className="p-3">
-                <p className="text-white font-semibold text-xl">WebHR</p>
+                <p className="text-white font-semibold text-xl">Risk Predict</p>
                 <p className="text-gray-500 text-[10px]">
-                  Designed a modern UI website comprising more than 50 screens,
-                  along with the integration of a blog using Next.js.
+                  To enhance the explainability of machine learning models,
+                  in the context of financial risk prediction, We used financial datasets by FICO.
                 </p>
               </div>
             </div>
           </Link>
           <Link
-            href="https://hireside.com/"
+            href="https://github.com/Data-JohnLee/Data-visualization-seoul-bike-share"
             rel="noopener noreferrer"
             target="_blank"
-            className="z-[1]">
-            <div className="flex-row flex mb-5">
+            className="z-[1] mb-5">
+            <div className="flex-row flex">
               <Image
                 src="/SecondProject.png"
                 height={150}
                 width={150}
-                alt="HireSide"
+                alt="Seoul Bike Sharing"
               />
               <div className="p-3">
-                <p className="text-white font-semibold text-xl">HireSide</p>
+                <p className="text-white font-semibold text-xl">Seoul Bike Sharing</p>
                 <p className="text-gray-500 text-[10px]">
-                  Developed a web application on Next.js that allows users to
-                  apply for jobs, create job posts, and manage their company
-                  profiles.
+                  Seoul Bike Sharing Demand Prediction using Machine Learning
+                  algorithms and data visualization.
                 </p>
               </div>
             </div>
           </Link>
-        </div>
-        <div className="flex-col flex md:flex-row ">
           <Link
-            href="https://www.vergesystems.com/"
+            href="https://github.com/Data-JohnLee/Social-media-data-analysis"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]">
-            <div className="flex-row flex mb-5">
+            <div className="flex-row flex">
               <Image
                 src="/ThirdProject.png"
                 height={150}
                 width={150}
-                alt="VergeSystems"
+                alt="Social Media Data Analysis"
               />
-              <div className=" p-3 ">
+              <div className="p-3">
                 <p className="text-white font-semibold text-xl">
-                  Verge Systems
+                  Social Media Data Analysis
                 </p>
                 <p className="text-gray-500 text-[10px]">
-                  Developed the Verge Systems website using React.js.
-                </p>
-              </div>
-            </div>
-          </Link>
-          <Link
-            href="http://44.201.47.75/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="z-[1]">
-            <div className="flex-row flex mb-5">
-              <Image
-                src="/FourProject.png"
-                height={150}
-                width={150}
-                alt="Payoasis"
-              />
-              <div className="p-3 ">
-                <p className="text-white font-semibold text-xl">Payoasis</p>
-                <p className="text-gray-500 text-[10px]">
-                  Designed the modern UI for a banking website utilizing Gatsby.
+                  Analyzed social media data using Python and its libraries.
+                  Taylor Swift's Youtube comment data was used for this project.
                 </p>
               </div>
             </div>
